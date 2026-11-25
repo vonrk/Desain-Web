@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VONRAFFI — Fashion Editorial</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = { theme: { extend: { fontFamily: { serif: ['Georgia', 'Times New Roman', 'serif'], sans: ['Arial', 'Helvetica', 'sans-serif'] },
+    colors: { milk: '#e6dccf', cream: '#f5efe6', sand: '#cfc3b3', cocoa: '#2b221c', mocha: '#6b4b36', latte: '#b08968' }
+  } } }
+</script>
+</head>
+
+<body class="bg-milk font-sans text-cocoa antialiased">
+
+<!-- NAVBAR -->
+<header class="sticky top-0 z-50 flex items-center justify-between border-b border-cocoa/20 bg-milk/95 px-6 py-5 backdrop-blur md:px-12">
+  <a href="#home" class="text-lg font-bold tracking-[.35em]">VONRAFFI</a>
+  <nav class="hidden gap-9 text-[10px] tracking-[.2em] md:flex">
+    <a class="transition hover:opacity-60" href="#collection">COLLECTION</a>
+    <a class="transition hover:opacity-60" href="#about">ABOUT</a>
+    <a class="transition hover:opacity-60" href="#contact">CONTACT</a>
+  </nav>
+  <span class="text-[10px] tracking-[.2em]">INDONESIA / 2026</span>
+</header>
+
+<main id="home">
+
+<!-- HERO -->
+<section class="grid gap-6 px-5 pt-10 md:grid-cols-12 md:px-12">
+  <div class="group relative min-h-[460px] overflow-hidden rounded-2xl bg-sand shadow-lg md:col-span-7">
+    <img src="3.jpg" alt="Editorial fashion" class="absolute inset-0 h-full w-full object-cover object-top transition duration-700 group-hover:scale-105">
+    <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-6 pt-20 text-white">
+      <p class="text-[10px] tracking-[.3em]">VONRAFFI PRESENTS</p>
+      <p class="mt-2 font-serif text-3xl italic">Fashion without boundaries.</p>
+    </div>
+  </div>
+  <div class="flex flex-col justify-center md:col-span-5 md:pl-7">
+    <p class="mb-5 text-[10px] tracking-[.35em]">THE NEW PERSPECTIVE · ISSUE NO. 001</p>
+    <h1 class="font-serif text-6xl leading-[.9] md:text-8xl">Dress <i>Beyond</i> Ordinary.</h1>
+    <p class="mt-8 max-w-xs text-xs leading-6 text-stone-700">A visual exploration of Japanese alternative fashion, dark aesthetics and contemporary personal style.</p>
+    <a href="#collection" class="mt-8 w-fit rounded-full bg-cocoa px-7 py-3 text-[10px] tracking-[.25em] text-cream shadow-md transition hover:-translate-y-0.5 hover:bg-mocha hover:shadow-xl">EXPLORE THE COLLECTION ↗</a>
+  </div>
+</section>
+
+<!-- COLLECTION: 1 baris 4 kolom di desktop -->
+<section id="collection" class="px-6 pt-24 md:px-12">
+  <div class="flex items-end justify-between border-b border-cocoa/20 pb-5">
+    <div>
+      <p class="text-[9px] tracking-[.3em] text-stone-600">CURATED STYLE</p>
+      <h2 class="mt-3 font-serif text-4xl md:text-6xl">The Collections</h2>
+    </div>
+    <span class="text-[9px] tracking-[.2em]">01 — 04</span>
+  </div>
+
+  <div class="grid grid-cols-1 gap-6 py-12 sm:grid-cols-2 lg:grid-cols-4">
+
+    <article class="group overflow-hidden rounded-2xl bg-cream shadow-md ring-1 ring-cocoa/10 transition hover:-translate-y-2 hover:shadow-2xl">
+      <div class="relative aspect-[3/4] overflow-hidden bg-sand">
+        <img src="1.jpg" alt="Noir Oversized" class="h-full w-full object-cover object-top transition duration-700 group-hover:scale-105">
+        <span class="absolute left-3 top-3 rounded-full bg-cocoa px-3 py-1 text-[9px] tracking-widest text-cream">BEST SELLER</span>
+      </div>
+      <div class="p-5">
+        <p class="text-[9px] tracking-[.25em] text-stone-600">01 — ALL BLACK</p>
+        <h3 class="mt-2 font-serif text-2xl">Noir <i>Oversized.</i></h3>
+        <p class="mt-2 text-xs leading-5 text-stone-700">Kemeja oversized dan bermuda hitam dengan boots platform.</p>
+        <div class="mt-4 flex items-center justify-between border-t border-cocoa/20 pt-4"><span class="font-serif text-lg">Rp 459.000</span><a href="#contact" class="rounded-full bg-cocoa px-4 py-2 text-[9px] tracking-widest text-cream transition hover:bg-mocha active:scale-95">PESAN ↗</a></div>
+      </div>
+    </article>
+
+    <article class="group overflow-hidden rounded-2xl bg-cream shadow-md ring-1 ring-cocoa/10 transition hover:-translate-y-2 hover:shadow-2xl">
+      <div class="relative aspect-[3/4] overflow-hidden bg-sand">
+        <img src="2.jpg" alt="Monochrome Tie" class="h-full w-full object-cover object-top transition duration-700 group-hover:scale-105">
+        <span class="absolute left-3 top-3 rounded-full bg-mocha px-3 py-1 text-[9px] tracking-widest text-white">NEW ARRIVAL</span>
+      </div>
+      <div class="p-5">
+        <p class="text-[9px] tracking-[.25em] text-stone-600">02 — CLEAN OUTFIT</p>
+        <h3 class="mt-2 font-serif text-2xl">Monochrome <i>Tie.</i></h3>
+        <p class="mt-2 text-xs leading-5 text-stone-700">Kemeja putih, dasi hitam, celana wide-leg, dan arm warmer.</p>
+        <div class="mt-4 flex items-center justify-between border-t border-cocoa/20 pt-4"><span class="font-serif text-lg">Rp 529.000</span><a href="#contact" class="rounded-full bg-cocoa px-4 py-2 text-[9px] tracking-widest text-cream transition hover:bg-mocha active:scale-95">PESAN ↗</a></div>
+      </div>
+    </article>
+
+    <article class="group overflow-hidden rounded-2xl bg-cream shadow-md ring-1 ring-cocoa/10 transition hover:-translate-y-2 hover:shadow-2xl">
+      <div class="relative aspect-[3/4] overflow-hidden bg-sand">
+        <img src="3.jpg" alt="Washed Cargo" class="h-full w-full object-cover object-top transition duration-700 group-hover:scale-105">
+        <span class="absolute left-3 top-3 rounded-full bg-latte px-3 py-1 text-[9px] tracking-widest text-cocoa">LIMITED</span>
+      </div>
+      <div class="p-5">
+        <p class="text-[9px] tracking-[.25em] text-stone-600">03 — STREETWEAR</p>
+        <h3 class="mt-2 font-serif text-2xl">Washed <i>Cargo.</i></h3>
+        <p class="mt-2 text-xs leading-5 text-stone-700">Cargo denim washed super baggy dengan kaos putih oversized.</p>
+        <div class="mt-4 flex items-center justify-between border-t border-cocoa/20 pt-4"><span class="font-serif text-lg">Rp 619.000</span><a href="#contact" class="rounded-full bg-cocoa px-4 py-2 text-[9px] tracking-widest text-cream transition hover:bg-mocha active:scale-95">PESAN ↗</a></div>
+      </div>
+    </article>
+
+    <article class="group overflow-hidden rounded-2xl bg-cream shadow-md ring-1 ring-cocoa/10 transition hover:-translate-y-2 hover:shadow-2xl">
+      <div class="relative aspect-[3/4] overflow-hidden bg-sand">
+        <img src="4.jpg" alt="Chain Harness" class="h-full w-full object-cover object-top transition duration-700 group-hover:scale-105">
+        <span class="absolute left-3 top-3 rounded-full bg-[#5b3f2e] px-3 py-1 text-[9px] tracking-widest text-white">DISKON 20%</span>
+      </div>
+      <div class="p-5">
+        <p class="text-[9px] tracking-[.25em] text-stone-600">04 — ALTERNATIVE</p>
+        <h3 class="mt-2 font-serif text-2xl">Chain <i>Harness.</i></h3>
+        <p class="mt-2 text-xs leading-5 text-stone-700">Kemeja lengan puff, bermuda hitam, belt, dan aksen rantai.</p>
+        <div class="mt-4 flex items-center justify-between border-t border-cocoa/20 pt-4"><span class="font-serif text-lg">Rp 479.000</span><a href="#contact" class="rounded-full bg-cocoa px-4 py-2 text-[9px] tracking-widest text-cream transition hover:bg-mocha active:scale-95">PESAN ↗</a></div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="bg-cocoa px-6 py-24 text-cream md:px-12">
+  <div class="grid gap-8 md:grid-cols-12">
+    <div class="md:col-span-4">
+      <p class="text-[9px] tracking-[.3em] text-stone-400">ABOUT THE BRAND</p>
+      <h2 class="mt-5 font-serif text-5xl">VONRAFFI.</h2>
+    </div>
+    <p class="font-serif text-2xl leading-relaxed md:col-span-7 md:col-start-6 md:text-4xl">
+      A fashion concept inspired by alternative culture, Japanese aesthetics and <i>individual expression.</i>
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="px-6 py-20 text-center md:px-12">
+  <p class="text-[9px] tracking-[.4em] text-stone-600">LET'S CONNECT</p>
+  <h2 class="mt-7 font-serif text-5xl md:text-7xl">Stay Different.</h2>
+  <a href="mailto:vonraffi@email.com" class="mt-9 inline-block rounded-full border border-cocoa px-9 py-4 text-[9px] tracking-[.3em] transition hover:bg-cocoa hover:text-cream">CONTACT VONRAFFI</a>
+</section>
+
+</main>
+
+<footer class="flex justify-between bg-cocoa px-6 py-8 text-[9px] tracking-[.2em] text-stone-400 md:px-12">
+  <span>© 2026 VONRAFFI</span>
+  <span>ALL RIGHTS RESERVED</span>
+</footer>
+
+</body>
+</html>

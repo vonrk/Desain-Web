@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout Website</title>
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;font:14px "Times New Roman"}
+header{background:#6179e8;text-align:center;padding:20px}
+nav{display:flex;background:#39ef00}
+nav a{flex:1;text-align:center;padding:8px;color:black;text-decoration:none}
+.container{display:flex;background:#ffff80;min-height:300px}
+.logo,.side{width:25%;padding:15px}
+.content{width:50%;padding:12px}
+img{width:100%;max-width:140px;display:block;margin:auto}
+footer{text-align:center;background:#eee;padding:10px}
+
+@media(max-width:600px){
+.container{flex-direction:column}
+.logo,.content,.side{width:100%}
+nav{flex-wrap:wrap}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>HEADER</h2>
+</header>
+
+<nav>
+<a href="#home">HOME</a>
+<a href="#profile">PROFILE</a>
+<a href="#galeri">GALERI</a>
+<a href="#contact">CONTACT</a>
+</nav>
+
+<div class="container" id="home">
+
+<aside class="logo">
+<img src="https://umsida.ac.id/wp-content/uploads/2020/01/cropped-logoGraph300x300.png"
+alt="Logo Universitas Muhammadiyah Sidoarjo">
+</aside>
+
+<main class="content" id="profile">
+
+<p><b>Selamat datang di website sederhana saya.</b>
+Website ini dibuat sebagai contoh layout menggunakan tabel HTML.</p>
+
+<h3>Program Studi</h3>
+
+<p>Selamat datang di halaman utama website.
+Silakan pilih menu yang tersedia untuk melihat informasi lainnya.</p>
+
+<ul>
+<li><a href="#profil">Profil Kampus</a></li>
+<li><a href="#akademik">Informasi Akademik dan Kemahasiswaan</a></li>
+<li><a href="#jadwal">Jadwal Perkuliahan</a></li>
+<li><a href="#pengumuman">Pengumuman</a></li>
+<li><a href="#kegiatan">Kegiatan Mahasiswa</a></li>
+<li><a href="#dosen">Data Dosen</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+
+<h3>Program Pendidikan</h3>
+
+<p>Beberapa program pendidikan yang tersedia:</p>
+
+<ul>
+<li>Program Diploma</li>
+<li>Program Pendidikan Sarjana</li>
+</ul>
+
+</main>
+
+<aside class="side" id="contact">
+<h3>Link</h3>
+<ul>
+<li><a href="#home">Menu Utama</a></li>
+<li><a href="#akademik">Data Akademik</a></li>
+</ul>
+</aside>
+
+</div>
+
+<footer>
+<p>COPYRIGHT © 2026 NAMA MAHASISWA</p>
+<p>Tugas Besar 1 - Desain Web</p>
+</footer>
+
+</body>
+</html>

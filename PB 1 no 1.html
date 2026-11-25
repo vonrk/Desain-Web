@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<title>Form Registrasi</title>
+<style>
+body{font-family:"Times New Roman";font-size:12px}
+h2{text-align:center}
+input,textarea,select{font-size:11px}
+.error{color:red}
+</style>
+</head>
+<body>
+<h2>FORM REGISTRASI</h2>
+<form onsubmit="return cek(event)">
+Nama : <input id="nama" placeholder="Masukkan Nama"><br>
+Alamat : <textarea id="alamat" placeholder="Masukkan Alamat"></textarea><br>
+Tanggal Lahir : <input type="date"><br>
+Telepon : <input id="tlp" placeholder="Masukkan No. Tlp"><br>
+URL : <input id="url" type="url" placeholder="Alamat Web"><br>
+Email : <input id="email" type="email" placeholder="Masukkan Email"><br>
+Jurusan : <select><option>Teknik Informatika</option><option>Sistem Informasi</option></select><br>
+<button type="submit">Kirim</button>
+<button type="reset" onclick="pesan.innerHTML=''">Batal</button>
+<p id="pesan" class="error"></p>
+</form>
+<script>
+function cek(e){
+e.preventDefault();
+let n=nama.value.trim(),a=alamat.value.trim(),t=tlp.value.trim();
+let u=url.value.trim(),m=email.value.trim();
+if(!n||!a||!t){pesan.innerHTML="Nama, alamat, dan telepon wajib diisi.";return false;}
+if(u&&!document.getElementById("url").checkValidity()){pesan.innerHTML="Format URL salah!";return false;}
+if(m&&!document.getElementById("email").checkValidity()){pesan.innerHTML="Format email salah!";return false;}
+pesan.style.color="green";pesan.innerHTML="Registrasi berhasil!";return false;
+}
+</script>
+</body>
+</html>
